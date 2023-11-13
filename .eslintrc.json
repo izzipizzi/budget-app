@@ -24,7 +24,7 @@
     "rules": {
         "@typescript-eslint/explicit-function-return-type": "off",
         "typescript-eslint/explicit-module-boundary-types": "off",
-        "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+        "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
         "react/prop-types": "off",
         "react/display-name": "off",
         "react/jsx-uses-react": "off",
@@ -37,6 +37,7 @@
         "array-bracket-spacing": ["error", "always"],
         "arrow-parens": ["error", "always"],
         "linebreak-style": ["error", "unix"],
-        "no-multiple-empty-lines": ["error", { "max": 1 }]
+        "no-multiple-empty-lines": ["error", { "max": 1 }],
+        "no-multi-spaces": "error"
     }
 }

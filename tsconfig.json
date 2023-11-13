@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
     "allowJs": true,
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -18,9 +18,30 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@interfaces/*": [
+        "src/interfaces/*"
+      ],
+      "@reducers/*": [
+        "src/reducers/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@helpers/*": [
+        "src/helpers/*"
+      ],
+      "@images/*": [
+        "src/static/images/*"
+      ]
+    }
   },
   "include": [
     "src"
+  ],
+  "types" : [
+    "./src/theme/theme.d.ts"
   ]
 }
