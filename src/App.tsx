@@ -1,8 +1,6 @@
 import React from 'react';
-import { BottomNavigation, BottomNavigationAction, Box, ThemeProvider } from '@mui/material';
-import { defaultTheme } from './theme';
+import { BottomNavigation, BottomNavigationAction, Box } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
-
 import { ReactComponent as HomeIcon } from '@images/svg/home.svg';
 import { ReactComponent as ExpensesIcon } from '@images/svg/expenses.svg';
 import { ReactComponent as AddIcon } from '@images/svg/add.svg';
