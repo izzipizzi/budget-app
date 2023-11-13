@@ -1,36 +1,62 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
-import Home from './pages/Home/Home';
-import Wallet from './pages/Wallet/Wallet';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import App from './App';
+import { createBrowserRouter, Navigate, Outlet, RouterProvider } from 'react-router-dom';
+import Home from '@pages/Home/Home';
+import Expenses from '@pages/Expenses/Expenses';
+import { defaultTheme } from './theme';
 
 const root = ReactDOM.createRoot(
-    document.getElementById('root') as HTMLElement,
+  document.getElementById('root') as HTMLElement,
 );
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home/>,
+    element:
+      <>
+        <App/>
+        <Outlet />
+      </>,
+    children:[
+      {
+        index: true,
+        element: <Navigate to="/home" replace />, 
+      },
+      {
+        path:'home',
+        element:
+          <>
+            <Home/>
+            <Outlet />
+          </>,
+      },
+      {
+        path:'expenses',
+        element:
+          <>
+            <Expenses/>
+            <Outlet />
+          </>,
+      },
+    ],
   },
-  {
-    path: '/wallet',
-    element: <Wallet/>,
-  },
-],
-{
-  basename: '/',
-},
-);
+]);
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <Helmet>
+      <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    </Helmet>
+    <CssBaseline>
+      <ThemeProvider theme={defaultTheme}>
+        <RouterProvider router={router}/>
+      </ThemeProvider>
+    </CssBaseline>
   </React.StrictMode>,
 );
 
