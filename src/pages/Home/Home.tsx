@@ -2,11 +2,13 @@ import React from 'react';
 import './Home.css';
 
 const Home = () => {
-    return (
-        <div className="Home">
+
+  return (
+    <div
+      className="Home">
             Home
-        </div>
-    );
-}
+    </div>
+  );
+};
 
 export default Home;

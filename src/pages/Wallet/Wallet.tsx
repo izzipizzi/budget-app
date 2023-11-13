@@ -2,11 +2,11 @@ import React from 'react';
 import './Wallet.css';
 
 const Wallet = () => {
-    return (
-        <div className="Wallet">
+  return (
+    <div className="Wallet">
             Wallet
-        </div>
-    );
-}
+    </div>
+  );
+};
 
 export default Wallet;
