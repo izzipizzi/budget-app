@@ -7,11 +7,16 @@ declare module '@mui/material/styles' {
         balanceTitle: React.CSSProperties;
         cardDigits: React.CSSProperties;
         selectItem: React.CSSProperties;
-        expandBtbText: React.CSSProperties;
+        expandBtnText: React.CSSProperties;
         userName: React.CSSProperties;
         greenAmount: React.CSSProperties;
+        blackAmount: React.CSSProperties;
         calendarWeek: React.CSSProperties;
         dayName: React.CSSProperties;
+        cardCaption: React.CSSProperties;
+        expensesTotalBalance: React.CSSProperties;
+        expensesTotalBalanceValue: React.CSSProperties;
+        expensesSubtitle: React.CSSProperties;
     }
 
     // allow configuration using `createTheme`
@@ -22,11 +27,16 @@ declare module '@mui/material/styles' {
         balanceTitle?: React.CSSProperties;
         cardDigits?: React.CSSProperties;
         selectItem?: React.CSSProperties;
-        expandBtbText?: React.CSSProperties;
+        expandBtnText?: React.CSSProperties;
         userName?: React.CSSProperties;
         greenAmount?: React.CSSProperties;
+        blackAmount?: React.CSSProperties;
         calendarWeek?: React.CSSProperties;
         dayName?: React.CSSProperties;
+        cardCaption?: React.CSSProperties;
+        expensesTotalBalance?: React.CSSProperties;
+        expensesTotalBalanceValue?: React.CSSProperties;
+        expensesSubtitle?: React.CSSProperties;
     }
 }
 
@@ -39,10 +49,15 @@ declare module '@mui/material/Typography' {
         balanceTitle: true;
         cardDigits: true;
         selectItem: true;
-        expandBtbText: true;
+        expandBtnText: true;
         userName: true;
         greenAmount: true;
+        blackAmount: true;
         calendarWeek: true;
         dayName: true;
+        cardCaption: true;
+        expensesTotalBalance: true;
+        expensesTotalBalanceValue: true;
+        expensesSubtitle: true;
     }
 }

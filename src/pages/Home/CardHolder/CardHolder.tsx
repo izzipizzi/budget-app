@@ -3,6 +3,7 @@ import { Box, Card, CardContent, IconButton, Stack, Typography } from '@mui/mate
 import { ReactComponent as DotsIcon } from '@images/svg/dots.svg';
 import { ReactComponent as MasterCardIcon } from '@images/svg/mastercard.svg';
 import { CardProvider } from '@enums/CardProvider';
+import { formatCardBalance } from '@helpers/utils';
 
 const CardHolder = () => {
   const formattedCard = (card: string) => {
@@ -43,7 +44,7 @@ const CardHolder = () => {
             }}
           >
             <Typography variant="balanceTitle">Total Balance</Typography>
-            <Typography variant="balance">{'$19287124'}</Typography>
+            <Typography variant="balance">${formatCardBalance(54632.03)}</Typography>
             <Stack
               direction="row"
               justifyContent="center"

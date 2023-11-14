@@ -1,13 +1,14 @@
-import React from 'react';
 import { Avatar, Stack, Typography } from '@mui/material';
-import { Transaction } from '@interfaces/Transaction';
-import { formatDate } from '@helpers/utils';
+import { formatMonthYear } from '@helpers/utils';
+import React from 'react';
+import { User } from '@interfaces/User';
 
-export interface TransactionItemProps {
-  transaction: Transaction;
+export interface ExpencesItemProps {
+  user: Pick<User, 'fullName' | 'avatar'>;
+  date: Date;
 }
 
-const TransactionItem: React.FC<TransactionItemProps> = ({ transaction }) => {
+const ExpencesItem: React.FC<ExpencesItemProps> = (props) => {
   return (
     <Stack
       direction="row"
@@ -19,7 +20,7 @@ const TransactionItem: React.FC<TransactionItemProps> = ({ transaction }) => {
         mb: '16px',
         p: '10px',
         '&:last-child': {
-          mb:'0px',
+          mb: '0px',
         },
       }}>
       <Stack
@@ -29,25 +30,24 @@ const TransactionItem: React.FC<TransactionItemProps> = ({ transaction }) => {
         sx={{ width: '100%' }}>
         <Avatar alt="User avatar" variant="circular"
           sx={{ mr: '16px' }}
-          src={transaction.user.avatar.url}/>
+          src={props.user.avatar.url}/>
         <Stack
           direction="column"
           justifyContent="space-around"
           alignItems="flex-start"
           sx={{ height: '40px' }}>
-          <Typography variant={'userName'}>{transaction.user.fullName}</Typography>
+          <Typography variant={'userName'}>{props.user.fullName}</Typography>
           <Typography variant={'expandBtnText'}>Bank Account</Typography>
         </Stack>
       </Stack>
       <Stack
         direction="column"
-        justifyContent="space-around"
+        justifyContent="flex-start"
         alignItems="flex-end"
         sx={{ height: '40px' }}>
-        <Typography variant={'greenAmount'}>${transaction.amount}</Typography>
-        <Typography variant={'expandBtnText'}>{formatDate(transaction.date)}</Typography>
+        <Typography variant={'expandBtnText'}>{formatMonthYear(props.date)}</Typography>
       </Stack>
     </Stack>
   );
 };
-export default TransactionItem;
+export default ExpencesItem;

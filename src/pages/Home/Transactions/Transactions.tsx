@@ -17,7 +17,7 @@ const Transactions = () => {
         alignItems="center"
         sx={{ width: '100%', height: '28px' }}>
         <Typography variant={'title'}>Transactions</Typography>
-        <Typography variant={'expandBtbText'}>View All</Typography>
+        <Typography variant={'expandBtnText'}>View All</Typography>
       </Stack>
       <Stack
         direction="column"
