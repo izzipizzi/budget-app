@@ -7,6 +7,9 @@ declare module '@mui/material/styles' {
         balanceTitle: React.CSSProperties;
         cardDigits: React.CSSProperties;
         selectItem: React.CSSProperties;
+        expandBtbText: React.CSSProperties;
+        userName: React.CSSProperties;
+        greenAmount: React.CSSProperties;
     }
 
     // allow configuration using `createTheme`
@@ -17,6 +20,9 @@ declare module '@mui/material/styles' {
         balanceTitle?: React.CSSProperties;
         cardDigits?: React.CSSProperties;
         selectItem?: React.CSSProperties;
+        expandBtbText?: React.CSSProperties;
+        userName?: React.CSSProperties;
+        greenAmount?: React.CSSProperties;
     }
 }
 
@@ -29,5 +35,8 @@ declare module '@mui/material/Typography' {
         balanceTitle: true;
         cardDigits: true;
         selectItem: true;
+        expandBtbText: true;
+        userName: true;
+        greenAmount: true;
     }
 }

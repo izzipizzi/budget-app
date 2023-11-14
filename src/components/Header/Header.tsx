@@ -10,7 +10,7 @@ const Header = () => {
       alignItems="center"
       spacing={0}
     >
-      <Avatar alt="USer avatar" variant="rounded"
+      <Avatar alt="User avatar" variant="rounded"
         src="https://gravatar.com/avatar/0b60671029d8510949c94f756ae0ccf7?s=200&d=robohash&r=g"/>
       <Typography variant="title">
                 Home

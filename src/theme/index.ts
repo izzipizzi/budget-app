@@ -46,5 +46,27 @@ export const defaultTheme = createTheme({
       lineHeight: 'normal',
       color:'#FFFFFF',
     },
+    expandBtbText: {
+      fontSize:  '12px',
+      fontStyle: 'normal',
+      fontWeight: 400,
+      lineHeight: 'normal',
+      width:'max-content',
+      color:'#A3A3A3',
+    },
+    userName: {
+      fontSize:  '16px',
+      fontStyle: 'normal',
+      fontWeight: 500,
+      lineHeight: 'normal',
+      color:'#000000',
+    },
+    greenAmount: {
+      fontSize:  '18px',
+      fontStyle: 'normal',
+      fontWeight: 500,
+      lineHeight: 'normal',
+      color:'#2BB272',
+    },
   },
 });

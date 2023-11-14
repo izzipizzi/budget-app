@@ -3,6 +3,7 @@ import './Home.css';
 import { Container } from '@mui/material';
 import CardHolder from '@pages/Home/CardHolder/CardHolder';
 import Analytics from '@pages/Home/Analytics/Analytics';
+import Transactions from '@pages/Home/Transactions/Transactions';
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
     }}>
       <CardHolder/>
       <Analytics/>
+      <Transactions/>
     </Container>
   );
 };

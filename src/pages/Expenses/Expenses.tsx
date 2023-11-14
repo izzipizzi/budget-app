@@ -1,12 +1,11 @@
 import React from 'react';
-import './Wallet.css';
 
-const Wallet = () => {
+const Expenses = () => {
   return (
     <div className="Wallet">
-            Wallet
+            Expenses
     </div>
   );
 };
 
-export default Wallet;
+export default Expenses;

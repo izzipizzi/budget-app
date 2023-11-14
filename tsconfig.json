@@ -34,7 +34,7 @@
         "src/pages/*"
       ],
       "@helpers/*": [
-        "src/helpers/*"
+        "src/shared/helpers/*"
       ],
       "@images/*": [
         "src/static/images/*"
