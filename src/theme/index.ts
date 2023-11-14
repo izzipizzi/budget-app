@@ -68,5 +68,19 @@ export const defaultTheme = createTheme({
       lineHeight: 'normal',
       color:'#2BB272',
     },
+    calendarWeek: {
+      fontSize:  '16px',
+      fontStyle: 'normal',
+      fontWeight: 500,
+      lineHeight: 'normal',
+      color:'#000000',
+    },
+    dayName: {
+      fontSize:  '16px',
+      fontStyle: 'normal',
+      fontWeight: 500,
+      lineHeight: 'normal',
+      color:'#615C5C',
+    },
   },
 });

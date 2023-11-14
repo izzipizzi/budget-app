@@ -10,6 +10,8 @@ declare module '@mui/material/styles' {
         expandBtbText: React.CSSProperties;
         userName: React.CSSProperties;
         greenAmount: React.CSSProperties;
+        calendarWeek: React.CSSProperties;
+        dayName: React.CSSProperties;
     }
 
     // allow configuration using `createTheme`
@@ -23,6 +25,8 @@ declare module '@mui/material/styles' {
         expandBtbText?: React.CSSProperties;
         userName?: React.CSSProperties;
         greenAmount?: React.CSSProperties;
+        calendarWeek?: React.CSSProperties;
+        dayName?: React.CSSProperties;
     }
 }
 
@@ -38,5 +42,7 @@ declare module '@mui/material/Typography' {
         expandBtbText: true;
         userName: true;
         greenAmount: true;
+        calendarWeek: true;
+        dayName: true;
     }
 }

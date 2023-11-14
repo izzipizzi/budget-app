@@ -1,10 +1,14 @@
+import { Container } from '@mui/material';
 import React from 'react';
+import CalendarDayPicker from '@pages/Expenses/CalendarDayPicker/CalendarDayPicker';
 
 const Expenses = () => {
   return (
-    <div className="Wallet">
-            Expenses
-    </div>
+    <Container maxWidth="sm" sx={{
+      px: '27px',
+    }}>
+      <CalendarDayPicker/>
+    </Container>
   );
 };
 
