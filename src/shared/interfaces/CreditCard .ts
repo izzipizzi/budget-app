@@ -5,5 +5,5 @@ export interface CreditCard {
     totalBalance: number,
     cardNumber: string,
     provider: CardProvider,
-    paymentHistory: PaymentHistory
+    paymentHistory: PaymentHistory[]
 }

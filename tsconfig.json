@@ -22,7 +22,10 @@
     "baseUrl": ".",
     "paths": {
       "@interfaces/*": [
-        "src/interfaces/*"
+        "src/shared/interfaces/*"
+      ],
+      "@enums/*": [
+        "src/shared/enums/*"
       ],
       "@reducers/*": [
         "src/reducers/*"

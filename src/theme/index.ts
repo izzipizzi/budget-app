@@ -39,5 +39,12 @@ export const defaultTheme = createTheme({
       color:'#A3A3A3',
       marginRight: '16px',
     },
+    selectItem: {
+      fontSize:  '13px',
+      fontStyle: 'normal',
+      fontWeight: 400,
+      lineHeight: 'normal',
+      color:'#FFFFFF',
+    },
   },
 });

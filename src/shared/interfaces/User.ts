@@ -6,4 +6,5 @@ export interface User {
     avatar: {
         url: string
     }
+    dateJoined: Date
 }

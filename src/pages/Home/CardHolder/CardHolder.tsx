@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Card, CardContent, IconButton, Stack, Typography } from '@mui/material';
 import { ReactComponent as DotsIcon } from '@images/svg/dots.svg';
 import { ReactComponent as MasterCardIcon } from '@images/svg/mastercard.svg';
-import { CardProvider } from '../../shared/enums/CardProvider';
+import { CardProvider } from '@enums/CardProvider';
 
 const CardHolder = () => {
   const formattedCard = (card: string) => {

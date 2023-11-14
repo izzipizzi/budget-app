@@ -6,6 +6,7 @@ declare module '@mui/material/styles' {
         balance: React.CSSProperties;
         balanceTitle: React.CSSProperties;
         cardDigits: React.CSSProperties;
+        selectItem: React.CSSProperties;
     }
 
     // allow configuration using `createTheme`
@@ -15,6 +16,7 @@ declare module '@mui/material/styles' {
         balance?: React.CSSProperties;
         balanceTitle?: React.CSSProperties;
         cardDigits?: React.CSSProperties;
+        selectItem?: React.CSSProperties;
     }
 }
 
@@ -26,5 +28,6 @@ declare module '@mui/material/Typography' {
         balance: true;
         balanceTitle: true;
         cardDigits: true;
+        selectItem: true;
     }
 }
