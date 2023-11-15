@@ -106,6 +106,7 @@ const CalendarDayPicker = () => {
           direction="row"
           justifyContent="space-between"
           alignItems="center"
+          key={'days'}
           sx={{
             width: '100%',
             mt: '16px',

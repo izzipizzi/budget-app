@@ -7,8 +7,9 @@ import { tempPaymentHistory } from '../../../shared/dummydata/transactions';
 
 export interface AnalyticsChartData {
   amount: number;
-  month: Month
+  month: Month;
 }
+
 const Analytics = () => {
   const [ year, setYear ] = React.useState(new Date().getFullYear());
 
@@ -71,6 +72,36 @@ const Analytics = () => {
               '& .MuiSvgIcon-root': {
                 color: '#FFFFFF',
                 right: '2px',
+              },
+            }}
+            MenuProps={{
+              PaperProps: {
+                sx: {
+                  borderRadius: '12px',
+                  '& .MuiMenu-list':{
+                    pt:'0px',
+                    pb:'0px',
+                    borderRadius: '12px',
+                    '& :first-child':{
+                      borderRadius: '12px 12px 0 0',
+                    },
+                    '& :last-child':{
+                      borderRadius: '0 0 12px 12px',
+                    },
+                    '& .MuiMenuItem-root':{
+                      backgroundColor:'#FFFFFF',
+                      '& span':{
+                        color: '#FF653A',
+                      },
+                    },
+                    '& .Mui-selected':{
+                      backgroundColor:'#FF653A',
+                      '& span':{
+                        color: '#FFFFFF',
+                      },
+                    },
+                  },
+                },
               },
             }}
           >

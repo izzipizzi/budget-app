@@ -74,7 +74,7 @@ const ExpensesOverall: React.FC<ExpensesOverallProps> = (props) => {
               alignSelf: 'flex-end',
               ml: 'auto!important',
             }}>
-            {budget.percent}
+            {budget.percent}%
           </Typography>
         </Stack>
         <Box sx={{ width: '100%', mt: '16px' }}>

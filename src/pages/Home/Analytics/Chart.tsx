@@ -37,7 +37,7 @@ const Sales: React.FC<ChartProps> = (props) => {
       data: props.data.map((item)=> item.amount),
       backgroundColor: '#8234F8',
       borderRadius: 6,
-      barThickness: 31,
+      barThickness: 32,
       barPercentage:0.8,
       categoryPercentage: 0.8,
       normalized: true,
@@ -53,7 +53,7 @@ const Sales: React.FC<ChartProps> = (props) => {
     },
     scales:{
       x: {
-        min: 5,
+        min: 5.5,
         grid: {
           display: false,
         },
@@ -81,7 +81,9 @@ const Sales: React.FC<ChartProps> = (props) => {
       datalabels: {
         anchor: 'end',
         align: 'top',
-        formatter: Math.round,
+        formatter: function(value, context) {
+          return '$' + Intl.NumberFormat('en-US').format(value);
+        },
         font: {
           weight: 'bold',
         },
