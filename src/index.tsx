@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     element:
       <>
         <App/>
-        <Outlet />
+        {/*<Outlet />*/}
       </>,
     children:[
       {

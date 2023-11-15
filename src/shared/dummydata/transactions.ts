@@ -33,7 +33,7 @@ export const tempPaymentHistory: PaymentHistory[] = [
           },
         },
         date: new Date(2022, 0, 24),
-        amount: 1400,
+        amount: 1410.22,
       },
       {
         user: {
@@ -88,7 +88,7 @@ export const tempPaymentHistory: PaymentHistory[] = [
           },
         },
         date: new Date(2022, 3, 22),
-        amount: 1200,
+        amount: 6722.22,
       },
     ],
   },
