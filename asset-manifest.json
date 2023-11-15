@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/budget-app/static/css/main.e6c13ad2.css",
+    "main.js": "/budget-app/static/js/main.b49f003e.js",
+    "static/js/787.c9e7ab9b.chunk.js": "/budget-app/static/js/787.c9e7ab9b.chunk.js",
+    "static/media/settings-filled.svg": "/budget-app/static/media/settings-filled.846f57d8c8d50acd62df103160c647ea.svg",
+    "static/media/settings.svg": "/budget-app/static/media/settings.fb1d4c8d140ab596013f8aa13542350b.svg",
+    "static/media/bell.svg": "/budget-app/static/media/bell.2e04115bb69c58324347abe27dcd7ae4.svg",
+    "static/media/card-orange.svg": "/budget-app/static/media/card-orange.f1ccd2d4f2ec191ce7f7f442f6b67cdd.svg",
+    "static/media/card-purple.svg": "/budget-app/static/media/card-purple.047a3fd9f1f7ffd7de6839351d2c2e20.svg",
+    "static/media/calendar-filled.svg": "/budget-app/static/media/calendar-filled.757b6790240efa0020945a65eb8d7b56.svg",
+    "static/media/calendar.svg": "/budget-app/static/media/calendar.6d6cdf0d6879be8837ffb30175ccb589.svg",
+    "static/media/dots.svg": "/budget-app/static/media/dots.ca6d78695240646b95a091a2440879fe.svg",
+    "index.html": "/budget-app/index.html",
+    "static/media/expenses-filled.svg": "/budget-app/static/media/expenses-filled.f6ab7f919174de9a89b690210dfdbd2f.svg",
+    "static/media/expenses.svg": "/budget-app/static/media/expenses.e54429ca0345abf2dcf8d95020ae5086.svg",
+    "static/media/home-filled.svg": "/budget-app/static/media/home-filled.df3cbe514066ef7dd7d574a442635f38.svg",
+    "static/media/home.svg": "/budget-app/static/media/home.7a3e90f3e45e2b10bbf9d2e43d123a75.svg",
+    "static/media/add.svg": "/budget-app/static/media/add.abb2869471a52c58d4c33b6ff7807b48.svg",
+    "static/media/mastercard.svg": "/budget-app/static/media/mastercard.f33cb4d830b1c3ffa83c1d5337bf9bbd.svg",
+    "static/media/arrow-left.svg": "/budget-app/static/media/arrow-left.0ba70ac9bd6699ca8d39adf827d4f36f.svg",
+    "static/media/arrow-right.svg": "/budget-app/static/media/arrow-right.44680051871764aa18279ae567b8b6f5.svg",
+    "main.e6c13ad2.css.map": "/budget-app/static/css/main.e6c13ad2.css.map",
+    "main.b49f003e.js.map": "/budget-app/static/js/main.b49f003e.js.map",
+    "787.c9e7ab9b.chunk.js.map": "/budget-app/static/js/787.c9e7ab9b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.b49f003e.js"
+  ]
+}
